@@ -1,30 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  Box,
+  Container,
+  SimpleGrid,
+} from '@chakra-ui/react';
+import { Blur, Description, Form } from 'components';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.tsx</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box position="relative">
+      <Container
+        as={SimpleGrid}
+        maxW="7xl"
+        columns={{ base: 1, md: 2 }}
+        spacing={{ base: 10, lg: 32 }}
+        py={{ base: 10, sm: 20, lg: 32 }}
+      >
+        <Description />
+        <Form />
+      </Container>
+      <Blur
+        position="absolute"
+        top={-10}
+        left={-10}
+        style={{ filter: 'blur(70px)' }}
+      />
+    </Box>
   );
 }
-
-export default App;
