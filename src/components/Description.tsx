@@ -8,17 +8,22 @@ const features = [
   {
     id: 1,
     title: 'Free and open source',
-    description: 'The source code for this project is available on GitHub and open to contributions.',
+    description: 'The source code for this project is available on GitHub and open to contributions. Feel free to roast my code.',
   },
   {
     id: 2,
     title: 'Compatible with the popular libraries',
-    description: 'Using the same API as Telegram. This means you can use this session string with Telegram and GramJs.',
+    description: 'Using the same API as Telegram. This means you can use this session string with Telegram, GramJs, Gryzle, and many other libraries.',
   },
   {
     id: 3,
-    title: 'Join our team',
-    description: 'We’re looking for amazing engineers just like you! Become a part of our rockstar engineering team and skyrocket your career!',
+    title: 'We respect your privacy',
+    description: 'We do not collect any personal data from you. Your session string is not stored. Everything is handled by your browser.',
+  },
+  {
+    id: 4,
+    title: 'You must have already registered on Telegram',
+    description: 'This app is not intended to be used by users who have not registered on Telegram. You must have an telegram account in order to generate an session string.',
   },
 ];
 

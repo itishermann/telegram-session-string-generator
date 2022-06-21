@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import { useFormik } from 'formik';
 import { useToast, useClipboard } from '@chakra-ui/react';
 import schemas from 'utilities/schema';
@@ -7,7 +8,7 @@ import { useState, useEffect } from 'react';
 
 const useTelegramForm = () => {
   const toast = useToast();
-  const [session, setSession] = useState<string>('');
+  const [session, setSession] = useState<string>('1BAAWdmVzdGEud2ViLnRlbGVncmFtLm9yZwBQQnUrJxgLSFL1PTgHnNUd3Y+OBafgyqqptpRk2sYGNCZwEwfZiJqa8ZRQFuhdmA4i1x6AKTTb6s5KLYp6yiGJNyQVbovPN0JXzD8sg8Rh+pN+Ymp77iNvQzJO038Z4xmtgs3f8a9IrNQjMMgMsPMzS1Rpndh3tzNNJOYvPTYkh7MrwbJj0Q17s6+dXjwbWPse8oRpTdNXVDVj6LG1XM4RfuID07SNE+qHlDuSncrao2Aa7qx7xieD954eOSQeRd46Hm5BLUR1cBQSGeyPowjBlw1ewB/0iuX8fJunqDRLqyhecujwZDJRGxr3JlNkv2dpXNyJnZH8GtfOmGAgh8sbgg==');
   const { hasCopied, onCopy } = useClipboard(session);
 
   useEffect(() => {
@@ -114,6 +115,7 @@ const useTelegramForm = () => {
     handleChange,
     handleSubmit,
     onCopy,
+    session,
   };
 };
 
