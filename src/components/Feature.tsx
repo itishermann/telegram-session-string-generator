@@ -17,7 +17,7 @@ function Feature({ title, description }:FeatureProps) {
       </Box>
       <VStack align="start">
         <Text fontWeight={600}>{title}</Text>
-        <Text color="gray.600">{description}</Text>
+        <Text color="gray.300">{description}</Text>
       </VStack>
     </HStack>
   );

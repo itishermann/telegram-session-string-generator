@@ -19,7 +19,7 @@ function Form() {
           lineHeight={1.1}
           fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}
         >
-          Join our team
+          Let&apos;s get started
           <Text
             as="span"
             bgGradient="linear(to-r, red.400,pink.400)"
@@ -36,7 +36,7 @@ function Form() {
       <Box as="form" mt={10}>
         <Stack spacing={4}>
           <Input
-            placeholder="Firstname"
+            placeholder="App Id"
             bg="gray.100"
             border={0}
             color="gray.500"
@@ -45,7 +45,7 @@ function Form() {
             }}
           />
           <Input
-            placeholder="firstname@lastname.io"
+            placeholder="App Hash"
             bg="gray.100"
             border={0}
             color="gray.500"
@@ -62,9 +62,6 @@ function Form() {
               color: 'gray.500',
             }}
           />
-          <Button fontFamily="heading" bg="gray.200" color="gray.800">
-            Upload CV
-          </Button>
         </Stack>
         <Button
           fontFamily="heading"

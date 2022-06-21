@@ -7,21 +7,16 @@ import Feature from './Feature';
 const features = [
   {
     id: 1,
-    title: 'Join our team',
-    description: 'We’re looking for amazing engineers just like you! Become a part of our rockstar engineering team and skyrocket your career!',
+    title: 'Free and open source',
+    description: 'The source code for this project is available on GitHub and open to contributions.',
   },
   {
     id: 2,
-    title: 'Join our team',
-    description: 'We’re looking for amazing engineers just like you! Become a part of our rockstar engineering team and skyrocket your career!',
+    title: 'Compatible with the popular libraries',
+    description: 'Using the same API as Telegram. This means you can use this session string with Telegram and GramJs.',
   },
   {
     id: 3,
-    title: 'Join our team',
-    description: 'We’re looking for amazing engineers just like you! Become a part of our rockstar engineering team and skyrocket your career!',
-  },
-  {
-    id: 4,
     title: 'Join our team',
     description: 'We’re looking for amazing engineers just like you! Become a part of our rockstar engineering team and skyrocket your career!',
   },
