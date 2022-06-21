@@ -1,6 +1,11 @@
 {
   "name": "telegram-session-string-generator",
   "version": "0.1.0",
+  "homepage": "https://itishermann.github.io/telegram-session-string-generator/",
+  "author": {
+    "name": "itishermann",
+    "email": "hello@hermann-kao.com"
+  },
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
