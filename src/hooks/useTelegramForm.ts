@@ -1,7 +1,7 @@
 /* eslint-disable no-alert */
 import { useFormik } from 'formik';
 import { useToast, useClipboard } from '@chakra-ui/react';
-import schemas from 'utilities/schema';
+import { schemas } from 'utilities';
 import { TelegramClient } from 'telegram';
 import { StringSession } from 'telegram/sessions';
 import { useState, useEffect } from 'react';
