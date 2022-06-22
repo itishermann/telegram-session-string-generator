@@ -25,7 +25,7 @@ function Footer() {
           {' '}
           <Link
             color="pink.400"
-            href="https://itishermann.me"
+            href="https://hermann-kao.com"
             target="_blank"
             rel="noreferrer"
             isExternal
