@@ -89,9 +89,8 @@ const useTelegramForm = () => {
         });
         const sessionString = sessionStorage.save();
         setSession(sessionString);
-        onCopy();
         toast({
-          description: 'Your session string have been generated, please keep it safe. You can use it to login to your account. The session string is copied to your clipboard.',
+          description: 'Your session string have been generated, please keep it safe. You can use it to login to your account.',
           title: 'Session string generated',
           status: 'success',
         });

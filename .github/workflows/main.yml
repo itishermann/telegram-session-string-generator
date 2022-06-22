@@ -1,9 +1,8 @@
 name: Build and deploy
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    tags:
+      - "v*"
 jobs:
   build:
     runs-on: ubuntu-latest
