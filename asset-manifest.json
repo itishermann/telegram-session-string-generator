@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/telegram-session-string-generator/static/js/main.1970c7ec.js",
+    "static/js/787.782f2ef9.chunk.js": "/telegram-session-string-generator/static/js/787.782f2ef9.chunk.js",
+    "index.html": "/telegram-session-string-generator/index.html",
+    "main.1970c7ec.js.map": "/telegram-session-string-generator/static/js/main.1970c7ec.js.map",
+    "787.782f2ef9.chunk.js.map": "/telegram-session-string-generator/static/js/787.782f2ef9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.1970c7ec.js"
+  ]
+}
