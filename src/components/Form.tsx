@@ -4,6 +4,9 @@ import {
   FormControl,
   FormErrorMessage,
   Link,
+  FormLabel,
+  Switch,
+  Collapse,
 } from '@chakra-ui/react';
 import { ExternalLinkIcon, WarningTwoIcon } from '@chakra-ui/icons';
 import React from 'react';
@@ -137,6 +140,45 @@ function Form() {
               </FormErrorMessage>
               )}
             </FormControl>
+            <FormControl isInvalid={touched.exportAuthorization && !!errors.exportAuthorization} isRequired flexDirection="row" display="flex">
+              <FormLabel color="gray.500" htmlFor="export-authorization" colorScheme="blue">
+                Export the authorization
+              </FormLabel>
+              <Switch
+                sx={{ 'span.chakra-switch__track:not([data-checked])': { backgroundColor: 'gray.300' } }}
+                id="export-authorization"
+                isChecked={values.exportAuthorization}
+                onChange={handleChange('exportAuthorization')}
+                onBlur={handleBlur('exportAuthorization')}
+                isInvalid={touched.exportAuthorization && !!errors.exportAuthorization}
+                colorScheme="pink"
+              />
+            </FormControl>
+            <Collapse startingHeight={-1} in={values.exportAuthorization}>
+              <FormControl
+                isInvalid={touched.exportDcId && !!errors.exportDcId}
+                isRequired={values.exportAuthorization}
+              >
+                <Input
+                  placeholder="Destination Data Center (DC id)"
+                  bg="gray.100"
+                  border={0}
+                  color="gray.500"
+                  _placeholder={{
+                    color: 'gray.500',
+                  }}
+                  value={values.exportDcId}
+                  onChange={handleChange('exportDcId')}
+                  onBlur={handleBlur('exportDcId')}
+                  isInvalid={touched.exportDcId && !!errors.exportDcId}
+                />
+                {touched.exportDcId && !!errors.exportDcId && (
+                  <FormErrorMessage>
+                    {errors.exportDcId}
+                  </FormErrorMessage>
+                )}
+              </FormControl>
+            </Collapse>
           </Stack>
           <Button
             onClick={() => handleSubmit()}

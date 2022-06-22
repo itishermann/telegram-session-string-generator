@@ -5,6 +5,15 @@ const theme = extendTheme({
     initialColorMode: 'dark',
     useSystemColorMode: false,
   },
+  components: {
+    Switch: {
+      baseStyle: {
+        track: {
+          bb: 'gray.300',
+        },
+      },
+    },
+  },
 });
 
 export default theme;
